@@ -39,7 +39,7 @@ class HappyBirthday:
             file = csv.reader(f, delimiter=' ', quotechar='|')
             for n, i in enumerate(file):
                 lst.append(tuple(''.join(i).split(',')))
-            with open('users.csv', 'w') as user:
+            with open(args[0], 'w') as user:
                 writer = csv.writer(user)
                 for n, i in enumerate(lst):
                     data, name = i
