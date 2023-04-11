@@ -88,6 +88,3 @@ class HappyBirthday:
         if all((i.isalpha() for i in x)):
             return True
         return False
-
-r=HappyBirthday()
-r('users.csv')
