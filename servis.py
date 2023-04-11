@@ -3,7 +3,7 @@ from random import choice
 import csv
 from datetime import datetime
 
-openai.api_key = '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'
+openai.api_key = 'API_KEY'
 
 messages = [
     {"role": "system", "content": "You are a helpful assistant."},
