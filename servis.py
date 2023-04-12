@@ -39,14 +39,14 @@ class HappyBirthday:
             file = csv.reader(f, delimiter=' ', quotechar='|')
             for n, i in enumerate(file):
                 lst.append(tuple(''.join(i).split(',')))
-            with open(args[0], 'w') as user:
-                writer = csv.writer(user)
-                for n, i in enumerate(lst):
-                    data, name = i
-                    if n == 0 and i[0].isalpha() and i[1].isalpha():
-                        writer.writerow([data, name])
-                    else:
-                        writer.writerow(self.congratulation_name(data, name))
+        with open(args[0], 'w') as user:
+            writer = csv.writer(user)
+            for n, i in enumerate(lst):
+                data, name = i
+                if n == 0 and i[0].isalpha() and i[1].isalpha():
+                    writer.writerow([data, name])
+                else:
+                    writer.writerow(self.congratulation_name(data, name))
 
     def congratulation_name(self, data, name):
         '''Проверка на корректность данных и генерация ответа ChatGpt '''
