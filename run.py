@@ -4,4 +4,4 @@ try:
     hapy=HappyBirthday()
     hapy('file.csv')
 except Exception as e:
-    print('Ошибка'+e)
+    print('Ошибка '+str(e))
